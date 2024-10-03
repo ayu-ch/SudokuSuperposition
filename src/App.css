@@ -1,0 +1,74 @@
+/* General app styling */
+body {
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Use flexbox to center */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.App {
+  text-align: center;
+}
+
+
+.sudoku-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.sudoku-row {
+  display: flex;
+}
+
+.sudoku-cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sudoku-cell:hover {
+  background-color: #f0f0f0;
+}
+
+.clicked{
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: white;
+}
+.empty-cell{
+  background-color: white;
+  border: 1px solid white;
+}
+.bg-3_bottom{
+  border-bottom: 2px solid grey;
+}
+.bg-bottom{
+  border-bottom: 3px solid red;
+
+}
+
+.bg-3_right{
+  border-right: 2px solid grey;
+}
+.bg-right{
+  border-right: 3px solid red;
+
+}
+
+.bg-top{
+  border-top: 3px solid red;
+}
+.bg-left{
+  border-left: 3px solid red;
+}
